@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>Web phishing detection</h1>
+<h1>Enter url</h1>
+<form action="{{ url_for('predict') }}" method="post">
+<input type="text" name="url" required="required" />
+<button type="submit">Predict</button>
+</form>
+<br><br>
+{{ prediction_text }}
+</body>
+</html>
